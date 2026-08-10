@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -9,15 +10,20 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary font-display font-bold text-white text-lg shadow-[0_0_15px_rgba(123,44,191,0.5)]">
-                HS
+              <div className="relative h-10 w-10 rounded-lg overflow-hidden shadow-[0_0_15px_rgba(123,44,191,0.5)]">
+                <Image
+                  src="/HoraStore.jpeg"
+                  alt="HORRA STORE Logo"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div>
                 <span className="font-display font-bold text-lg tracking-wider text-white block">
-                  HORRA
+                  HORRA STORE
                 </span>
                 <span className="text-[10px] uppercase tracking-[0.2em] text-primary">
-                  Esports Store
+                  Gaming Gear & Custom PCs
                 </span>
               </div>
             </Link>

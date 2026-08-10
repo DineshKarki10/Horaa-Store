@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { useCart } from "@/components/cart/CartProvider";
 import CartDrawer from "@/components/cart/CartDrawer";
@@ -21,16 +22,21 @@ export default function Navbar() {
       <nav className="sticky top-0 z-50 glass border-b border-primary/20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
-            <Link href="/" className="flex items-center gap-2 group">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary font-display font-bold text-white text-lg shadow-[0_0_15px_rgba(123,44,191,0.5)] group-hover:shadow-[0_0_25px_rgba(123,44,191,0.8)] transition-shadow">
-                HS
+            <Link href="/" className="flex items-center gap-3 group">
+              <div className="relative h-10 w-10 rounded-lg overflow-hidden shadow-[0_0_15px_rgba(123,44,191,0.5)] group-hover:shadow-[0_0_25px_rgba(123,44,191,0.8)] transition-shadow">
+                <Image
+                  src="/HoraStore.jpeg"
+                  alt="HORRA STORE Logo"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div className="hidden sm:block">
                 <span className="font-display font-bold text-lg tracking-wider text-white">
-                  HORRA
+                  HORRA STORE
                 </span>
                 <span className="block text-[10px] uppercase tracking-[0.2em] text-primary">
-                  Esports Store
+                  Gaming Gear & Custom PCs
                 </span>
               </div>
             </Link>

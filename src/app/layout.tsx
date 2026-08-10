@@ -29,11 +29,11 @@ export const metadata: Metadata = {
     template: "%s | HORRA STORE",
   },
   description:
-    "Official retail arm of HORRA ESPORTS. Premium gaming hardware, custom PC builds, cables, headphones, splitters, and esports merchandise in Kathmandu, Nepal.",
+    "Premium gaming hardware, custom PC builds, cables, headphones, splitters, and esports merchandise in Kathmandu, Nepal.",
   keywords: [
     "gaming PC Kathmandu",
     "buy gaming gear Nepal",
-    "Horra Esports store",
+    "HORRA STORE",
     "custom PC builder Nepal",
     "gaming headphones Kathmandu",
     "audio splitter Nepal",

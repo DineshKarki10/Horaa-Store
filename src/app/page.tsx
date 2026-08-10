@@ -13,9 +13,10 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-background" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(123,44,191,0.15),transparent_50%)]" />
+        <div className="absolute inset-0 animate-grid opacity-30" />
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 lg:py-32 relative">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
+            <div className="space-y-8 animate-slide-up">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
@@ -30,7 +31,7 @@ export default function Home() {
                 <span className="block text-glow text-primary">GAME</span>
               </h1>
               <p className="text-lg sm:text-xl text-text-secondary max-w-xl leading-relaxed">
-                Premium gaming hardware, custom PC builds, and esports gear from HORRA ESPORTS. Built for gamers, by gamers.
+                Premium gaming hardware, custom PC builds, and esports gear from HORRA STORE. Built for gamers, by gamers.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -78,13 +79,23 @@ export default function Home() {
               </div>
             </div>
             <div className="relative hidden lg:block">
-              <div className="relative w-full aspect-square max-w-lg mx-auto">
+              <div className="relative w-full aspect-square max-w-lg mx-auto animate-float">
                 <div className="absolute inset-0 rounded-full bg-primary/10 blur-3xl" />
-                <div className="relative h-full w-full rounded-full border border-primary/20 flex items-center justify-center">
+                <div className="relative h-full w-full rounded-full border border-primary/20 flex items-center justify-center animate-glow-pulse">
                   <div className="text-center">
-                    <div className="text-8xl font-display font-black text-primary/20">HS</div>
-                    <div className="font-heading text-xl font-bold text-white -mt-4">
-                      HORRA ESPORTS
+                    <div className="relative w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden border-2 border-primary/30">
+                      <Image
+                        src="/HoraStore.jpeg"
+                        alt="HORRA STORE Logo"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="font-heading text-2xl font-bold text-white">
+                      HORRA STORE
+                    </div>
+                    <div className="text-sm text-primary uppercase tracking-widest">
+                      Gaming Gear & Custom PCs
                     </div>
                   </div>
                 </div>
@@ -164,8 +175,14 @@ export default function Home() {
             </Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {featuredProducts.map((product) => (
-              <ProductCard key={product.id} product={product} />
+            {featuredProducts.map((product, index) => (
+              <div
+                key={product.id}
+                className="animate-slide-up"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <ProductCard product={product} />
+              </div>
             ))}
           </div>
         </div>
@@ -234,8 +251,14 @@ export default function Home() {
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {saleProducts.map((product) => (
-                <ProductCard key={product.id} product={product} />
+              {saleProducts.map((product, index) => (
+                <div
+                  key={product.id}
+                  className="animate-slide-up"
+                  style={{ animationDelay: `${index * 100}ms` }}
+                >
+                  <ProductCard product={product} />
+                </div>
               ))}
             </div>
           </div>

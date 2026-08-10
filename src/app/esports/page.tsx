@@ -7,12 +7,12 @@ import { products } from "@/data/products";
 const merchProducts = products.filter((p) => p.category === "merch");
 
 const teamRoster = [
-  { name: "ShadowStrike", role: "AWPer", avatar: "/images/team/player-1.jpg" },
-  { name: "NeonBlade", role: "Rifler", avatar: "/images/team/player-2.jpg" },
-  { name: "VortexKing", role: "IGL / Support", avatar: "/images/team/player-3.jpg" },
-  { name: "PixelStorm", role: "Entry Fragger", avatar: "/images/team/player-4.jpg" },
-  { name: "ZeroGravity", role: "Lurker", avatar: "/images/team/player-5.jpg" },
-  { name: "CyberNinja", role: "Coach", avatar: "/images/team/player-6.jpg" },
+  { name: "NoFear", role: "Fragger", avatar: "/images/team/player-1.jpg" },
+  { name: "Sleepy", role: "Fragger", avatar: "/images/team/player-2.jpg" },
+  { name: "Jiggle", role: "IGL", avatar: "/images/team/player-3.jpg" },
+  { name: "Sky", role: "Entry Fragger", avatar: "/images/team/player-4.jpg" },
+  { name: "HaitDami", role: "Substitute", avatar: "/images/team/player-5.jpg" },
+  { name: "Device", role: "Coach", avatar: "/images/team/player-6.jpg" },
 ];
 
 const tournaments = [

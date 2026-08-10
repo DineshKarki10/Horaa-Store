@@ -36,13 +36,13 @@ export interface PCComponent {
 }
 
 export const categories = [
-  { id: "custom-pc", name: "Custom PCs", icon: "ðŸ–¥ï¸", description: "Build your dream rig" },
-  { id: "laptops", name: "Laptops", icon: "ðŸ’»", description: "Portable powerhouses" },
-  { id: "keyboards", name: "Keyboards", icon: "âŒ¨ï¸", description: "Mechanical & gaming" },
-  { id: "audio", name: "Audio / Headphones", icon: "ðŸŽ§", description: "Immersive sound" },
-  { id: "cables", name: "Cables & Adapters", icon: "ðŸ”Œ", description: "Connections & splitters" },
-  { id: "streaming", name: "Streaming Gear", icon: "ðŸ“¹", description: "Content creation" },
-  { id: "merch", name: "Merch", icon: "ðŸ‘•", description: "Horra Esports apparel" },
+  { id: "custom-pc", name: "Custom PCs", icon: "🖥️", description: "Build your dream rig" },
+  { id: "laptops", name: "Laptops", icon: "💻", description: "Portable powerhouses" },
+  { id: "keyboards", name: "Keyboards", icon: "⌨️", description: "Mechanical & gaming" },
+  { id: "audio", name: "Audio / Headphones", icon: "🎧", description: "Immersive sound" },
+  { id: "cables", name: "Cables & Adapters", icon: "🔌", description: "Connections & splitters" },
+  { id: "streaming", name: "Streaming Gear", icon: "📹", description: "Content creation" },
+  { id: "merch", name: "Merch", icon: "👕", description: "HORRA STORE apparel" },
 ];
 
 export const products: Product[] = [
@@ -53,7 +53,7 @@ export const products: Product[] = [
     brand: "HORRA",
     price: 185000,
     originalPrice: 195000,
-    image: "/images/products/pc-1.svg",
+    image: "https://images.pexels.com/photos/371924/pexels-photo-371924.jpeg",
     description: "Top-tier custom gaming PC built for esports. Features AMD Ryzen 7 7800X3D, RTX 4070 Super, 32GB DDR5, and 1TB NVMe Gen4.",
     specifications: {
       CPU: "AMD Ryzen 7 7800X3D",
@@ -76,7 +76,7 @@ export const products: Product[] = [
     brand: "HORRA",
     price: 245000,
     originalPrice: 260000,
-    image: "/images/products/pc-2.svg",
+    image: "https://images.pexels.com/photos/371924/pexels-photo-371924.jpeg",
     description: "Ultimate esports machine with Intel Core i9-14900K and NVIDIA RTX 4080 Super.",
     specifications: {
       CPU: "Intel Core i9-14900K",
@@ -98,7 +98,7 @@ export const products: Product[] = [
     category: "custom-pc",
     brand: "HORRA",
     price: 125000,
-    image: "/images/products/pc-3.svg",
+    image: "https://images.pexels.com/photos/371924/pexels-photo-371924.jpeg",
     description: "Affordable gaming PC perfect for 1080p esports. AMD Ryzen 5 7600, RTX 4060, 16GB DDR5.",
     specifications: {
       CPU: "AMD Ryzen 5 7600",
@@ -119,9 +119,9 @@ export const products: Product[] = [
     name: "HyperX Cloud III Wireless",
     category: "audio",
     brand: "HyperX",
-    price: 18500,
-    originalPrice: 22000,
-    image: "/images/products/headset-1.svg",
+    price: 15000,
+    originalPrice: 18000,
+    image: "https://images.pexels.com/photos/1294886/pexels-photo-1294886.jpeg",
     description: "Premium wireless gaming headset with DTS Headphone:X spatial audio and 120-hour battery life.",
     specifications: {
       Driver: "53mm",
@@ -141,8 +141,8 @@ export const products: Product[] = [
     name: "Razer BlackWidow V4 X",
     category: "keyboards",
     brand: "Razer",
-    price: 22000,
-    image: "/images/products/keyboard-1.svg",
+    price: 18000,
+    image: "https://images.pexels.com/photos/2118169/pexels-photo-2118169.jpeg",
     description: "Mechanical gaming keyboard with Razer Green switches, Chroma RGB, and magnetic wrist rest.",
     specifications: {
       Switches: "Razer Green Mechanical",
@@ -164,7 +164,7 @@ export const products: Product[] = [
     brand: "Generic",
     price: 1200,
     originalPrice: 1500,
-    image: "/images/products/splitter-1.svg",
+    image: "https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg",
     description: "High-quality USB-C to dual 3.5mm TRRS splitter for separate audio and microphone connections.",
     specifications: {
       Input: "USB-C",
@@ -185,7 +185,7 @@ export const products: Product[] = [
     category: "cables",
     brand: "Cable Matters",
     price: 3500,
-    image: "/images/products/cable-1.svg",
+    image: "https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg",
     description: "Certified Ultra High Speed HDMI 2.1 cable supporting 8K@60Hz, 4K@120Hz, and VRR.",
     specifications: {
       Version: "HDMI 2.1",
@@ -206,7 +206,7 @@ export const products: Product[] = [
     category: "audio",
     brand: "Razer",
     price: 12000,
-    image: "/images/products/speaker-1.svg",
+    image: "https://images.pexels.com/photos/1649726/pexels-photo-1649726.jpeg",
     description: "Compact gaming soundbar with custom-tuned drivers and Bluetooth 5.3 connectivity.",
     specifications: {
       Drivers: "2x 48mm + 1x 20mm",
@@ -226,7 +226,7 @@ export const products: Product[] = [
     category: "keyboards",
     brand: "Logitech G",
     price: 14500,
-    image: "/images/products/mouse-1.svg",
+    image: "https://images.pexels.com/photos/50713/pexels-photo-50713.jpeg",
     description: "Ultra-lightweight esports mouse with HERO 2 sensor, 44g weight, and 95-hour battery.",
     specifications: {
       Sensor: "HERO 2 44K DPI",
@@ -247,7 +247,7 @@ export const products: Product[] = [
     category: "cables",
     brand: "Cable Matters",
     price: 2800,
-    image: "/images/products/adapter-1.svg",
+    image: "https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg",
     description: "Active adapter converting DisplayPort 1.4 to HDMI 2.1 for 8K gaming monitors.",
     specifications: {
       Input: "DisplayPort 1.4",
@@ -267,8 +267,8 @@ export const products: Product[] = [
     category: "merch",
     brand: "HORRA",
     price: 2500,
-    image: "/images/products/jersey-1.svg",
-    description: "Official HORRA ESPORTS team jersey. Breathable mesh fabric with team logo embroidery.",
+    image: "https://images.pexels.com/photos/2204199/pexels-photo-2204199.jpeg",
+    description: "Official HORRA STORE team jersey. Breathable mesh fabric with team logo embroidery.",
     specifications: {
       Material: "100% Polyester Mesh",
       Fit: "Regular",
@@ -288,7 +288,7 @@ export const products: Product[] = [
     brand: "Elgato",
     price: 28000,
     originalPrice: 32000,
-    image: "/images/products/capture-1.svg",
+    image: "https://images.pexels.com/photos/3129675/pexels-photo-3129675.jpeg",
     description: "Professional game capture card supporting 4K60 HDR10 pass-through and 1080p240 capture.",
     specifications: {
       Input: "HDMI 2.1",
@@ -312,7 +312,7 @@ export const pcComponents: PCComponent[] = [
     category: "cpu",
     brand: "AMD",
     price: 28000,
-    image: "/images/components/cpu-1.svg",
+    image: "https://images.pexels.com/photos/2589458/pexels-photo-2589458.jpeg",
     specifications: {
       socket: "AM5",
       cores: "6",
@@ -329,7 +329,7 @@ export const pcComponents: PCComponent[] = [
     category: "cpu",
     brand: "AMD",
     price: 48000,
-    image: "/images/components/cpu-2.svg",
+    image: "https://images.pexels.com/photos/2589458/pexels-photo-2589458.jpeg",
     specifications: {
       socket: "AM5",
       cores: "8",
@@ -346,7 +346,7 @@ export const pcComponents: PCComponent[] = [
     category: "cpu",
     brand: "Intel",
     price: 75000,
-    image: "/images/components/cpu-3.svg",
+    image: "https://images.pexels.com/photos/2589458/pexels-photo-2589458.jpeg",
     specifications: {
       socket: "LGA1700",
       cores: "24",
@@ -363,7 +363,7 @@ export const pcComponents: PCComponent[] = [
     category: "motherboard",
     brand: "MSI",
     price: 18000,
-    image: "/images/components/mb-1.svg",
+    image: "https://images.pexels.com/photos/2589457/pexels-photo-2589457.jpeg",
     specifications: {
       socket: "AM5",
       formFactor: "Micro-ATX",
@@ -380,7 +380,7 @@ export const pcComponents: PCComponent[] = [
     category: "motherboard",
     brand: "Gigabyte",
     price: 35000,
-    image: "/images/components/mb-2.svg",
+    image: "https://images.pexels.com/photos/2589457/pexels-photo-2589457.jpeg",
     specifications: {
       socket: "AM5",
       formFactor: "ATX",
@@ -397,7 +397,7 @@ export const pcComponents: PCComponent[] = [
     category: "motherboard",
     brand: "ASUS",
     price: 85000,
-    image: "/images/components/mb-3.svg",
+    image: "https://images.pexels.com/photos/2589457/pexels-photo-2589457.jpeg",
     specifications: {
       socket: "LGA1700",
       formFactor: "ATX",
@@ -414,7 +414,7 @@ export const pcComponents: PCComponent[] = [
     category: "gpu",
     brand: "Gigabyte",
     price: 42000,
-    image: "/images/components/gpu-1.svg",
+    image: "https://images.pexels.com/photos/2589460/pexels-photo-2589460.jpeg",
     specifications: {
       memory: "8GB GDDR6",
       interface: "PCIe 4.0 x16",
@@ -429,7 +429,7 @@ export const pcComponents: PCComponent[] = [
     category: "gpu",
     brand: "ASUS",
     price: 75000,
-    image: "/images/components/gpu-2.svg",
+    image: "https://images.pexels.com/photos/2589460/pexels-photo-2589460.jpeg",
     specifications: {
       memory: "12GB GDDR6X",
       interface: "PCIe 4.0 x16",
@@ -444,7 +444,7 @@ export const pcComponents: PCComponent[] = [
     category: "gpu",
     brand: "MSI",
     price: 125000,
-    image: "/images/components/gpu-3.svg",
+    image: "https://images.pexels.com/photos/2589460/pexels-photo-2589460.jpeg",
     specifications: {
       memory: "16GB GDDR6X",
       interface: "PCIe 4.0 x16",
@@ -459,7 +459,7 @@ export const pcComponents: PCComponent[] = [
     category: "ram",
     brand: "Corsair",
     price: 6000,
-    image: "/images/components/ram-1.svg",
+    image: "https://images.pexels.com/photos/2589459/pexels-photo-2589459.jpeg",
     specifications: {
       memoryType: "DDR5",
       capacity: "16GB",
@@ -475,7 +475,7 @@ export const pcComponents: PCComponent[] = [
     category: "ram",
     brand: "G.Skill",
     price: 14000,
-    image: "/images/components/ram-2.svg",
+    image: "https://images.pexels.com/photos/2589459/pexels-photo-2589459.jpeg",
     specifications: {
       memoryType: "DDR5",
       capacity: "32GB (2x16GB)",
@@ -491,7 +491,7 @@ export const pcComponents: PCComponent[] = [
     category: "storage",
     brand: "Western Digital",
     price: 14000,
-    image: "/images/components/ssd-1.svg",
+    image: "https://images.pexels.com/photos/2589461/pexels-photo-2589461.jpeg",
     specifications: {
       capacity: "1TB",
       interface: "NVMe Gen4",
@@ -507,7 +507,7 @@ export const pcComponents: PCComponent[] = [
     category: "storage",
     brand: "Samsung",
     price: 26000,
-    image: "/images/components/ssd-2.svg",
+    image: "https://images.pexels.com/photos/2589461/pexels-photo-2589461.jpeg",
     specifications: {
       capacity: "2TB",
       interface: "NVMe Gen4",
@@ -523,7 +523,7 @@ export const pcComponents: PCComponent[] = [
     category: "psu",
     brand: "Corsair",
     price: 14000,
-    image: "/images/components/psu-1.svg",
+    image: "https://images.pexels.com/photos/2589462/pexels-photo-2589462.jpeg",
     specifications: {
       wattage: 750,
       efficiency: "80+ Gold",
@@ -539,7 +539,7 @@ export const pcComponents: PCComponent[] = [
     category: "psu",
     brand: "EVGA",
     price: 18000,
-    image: "/images/components/psu-2.svg",
+    image: "https://images.pexels.com/photos/2589462/pexels-photo-2589462.jpeg",
     specifications: {
       wattage: 850,
       efficiency: "80+ Gold",
@@ -555,7 +555,7 @@ export const pcComponents: PCComponent[] = [
     category: "cooler",
     brand: "NZXT",
     price: 22000,
-    image: "/images/components/cooler-1.svg",
+    image: "https://images.pexels.com/photos/2589463/pexels-photo-2589463.jpeg",
     specifications: {
       type: "AIO Liquid",
       radiatorSize: "280mm",
@@ -571,7 +571,7 @@ export const pcComponents: PCComponent[] = [
     category: "case",
     brand: "NZXT",
     price: 16000,
-    image: "/images/components/case-1.svg",
+    image: "https://images.pexels.com/photos/2589464/pexels-photo-2589464.jpeg",
     specifications: {
       formFactor: "Mid-Tower",
       maxGPULength: "435mm",
@@ -582,4 +582,3 @@ export const pcComponents: PCComponent[] = [
     inStock: true,
   },
 ];
-
